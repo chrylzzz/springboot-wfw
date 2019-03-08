@@ -17,7 +17,7 @@ public class Myconfig {
      * @return
      */
     @Bean
-    @LoadBalanced//基于客户端的负载均衡：默认是轮询
+    @LoadBalanced//基于客户端的负载均衡：默认是轮询，直接加在restTemplate上，调用的方法也是具有负载均衡地
     RestTemplate restTemplate(){
         return new RestTemplate();
     }

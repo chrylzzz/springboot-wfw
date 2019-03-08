@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * </p>
  * Created By Chr on 2019/2/27/0027.
  */
-//                  value就是服务名字，        fallback就是服务调用失败之后执行的类，回调类（要写fallback才会开启）
+//                  value就是服务名字，            fallback就是服务调用失败之后执行的类，回调类（要写fallback才会开启）
 @FeignClient(value = "service-client-chr-01",fallback = ServiceHelloFallback.class)
 public interface IServiceHello {
 
-    //value就是接口的地址,
+    //value就是对应的eureka-client中接口的地址,
     @RequestMapping(value = "/helloBody",method = RequestMethod.GET)
     String sayHello(@RequestBody User user);//@RequestBody就是eureka-client的接收请求参数为对象的方法
 }

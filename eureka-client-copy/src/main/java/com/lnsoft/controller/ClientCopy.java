@@ -22,7 +22,7 @@ public class ClientCopy {
     }
 
     /**
-     * 注释，模拟ribbon的熔断降级机制
+     * 注释，模拟ribbon的熔断降级机制,feign和zuul都继承了熔断机制
      */
     //接收对象的接口@RequestBody
 //    @RequestMapping("/helloBody")

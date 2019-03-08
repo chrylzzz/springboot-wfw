@@ -22,6 +22,7 @@ public class HelloBodyController {
 
     /**
      * feign已经集成了负载均衡ribbon，所以8923端口并没有/helloBody拦截地址，就会调用@Feign的回调类执行—当前服务失败的方法
+     * 这里调用的是eureka-client的：/helloBody
      *
      * @param request
      * @param response

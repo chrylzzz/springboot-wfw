@@ -25,7 +25,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-        <!-- 消息总线功能：springcloud的配置中心用到，
+        <!-- 消息总线功能：springcloud的配置中心config用到，
              配置中心：版本仓库git+消息总线bus
          -->
         <dependency>
