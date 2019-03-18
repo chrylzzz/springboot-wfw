@@ -25,7 +25,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
-		<!--  Zuul ：配置网关，解决权限繁重，默认也继承了ribbon断路器-->
+		<!--  Zuul ：配置网关，解决权限繁重，默认也继承了Hystrix断路器-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
