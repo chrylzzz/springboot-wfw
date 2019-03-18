@@ -12,7 +12,7 @@
     <artifactId>netflix-ribbon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>netflix-ribbon</name>
-    <description>负载均衡ribbon</description>
+    <description>负载均衡ribbon，和Hystrix的熔断降级机制</description>
 
     <properties>
         <java.version>1.8</java.version>
