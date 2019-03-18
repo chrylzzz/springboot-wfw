@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
  * Created By Chr on 2019/2/27/0027.
  */
 @Configuration
-public class Myconfig {
+public class MyConfig {
 
     /**
      * 服务器调用用restTemplate
