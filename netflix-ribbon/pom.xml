@@ -38,7 +38,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-        <!-- ribbon 负载均衡：默认是轮询的方式，拥有降级机制-->
+        <!-- ribbon 负载均衡：默认是轮询的方式，Hystrix拥有降级机制-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
