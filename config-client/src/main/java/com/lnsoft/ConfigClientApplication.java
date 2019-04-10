@@ -10,11 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class ConfigClientApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ConfigClientApplication.class, args);
-	}
-
-
+    public static void main(String[] args) {
+        SpringApplication.run(ConfigClientApplication.class, args);
+    }
 
 
 //	打开网址访问：http://localhost:8881/hi，网页显示：
@@ -25,10 +23,11 @@ public class ConfigClientApplication {
 
 // 	而config-server是从git仓库读取的,如图：图片在resources目录
 
-	@Value("${foo}")
-	String foo;
-	@RequestMapping(value = "/hi")
-	public String hi(){
-		return foo;
-	}
+    @Value("${foo}")
+    String foo;
+
+    @RequestMapping(value = "/hi")
+    public String hi() {
+        return foo;
+    }
 }
