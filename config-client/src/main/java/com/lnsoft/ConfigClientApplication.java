@@ -23,7 +23,7 @@ public class ConfigClientApplication {
 
 // 	而config-server是从git仓库读取的,如图：图片在resources目录
 
-    @Value("${foo}")
+    @Value("${foo}")//foo从gitHub上拉取// https://github.com/forezp/SpringcloudConfig/
     String foo;
 
     @RequestMapping(value = "/hi")
